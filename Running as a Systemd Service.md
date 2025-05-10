@@ -1,8 +1,8 @@
-1. Create a systemd service file:
-   
+**1. Create a systemd service file:** 
+
 sudo nano /etc/systemd/system/linux_monitor.service
 
-Paste this (adjust paths if needed):
+**Paste this (adjust paths if needed):**
 
 [Unit]
 Description=Linux System Monitor
@@ -18,14 +18,14 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 
-2. Enable and Start the Service
-   
+**2. Enable and Start the Service**
+
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 sudo systemctl enable linux_monitor.service
 sudo systemctl start linux_monitor.service
 
-3. Check Status
+**3. Check Status**
    
 sudo systemctl status linux_monitor.service
 journalctl -u linux_monitor.service -f
