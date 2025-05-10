@@ -30,15 +30,24 @@ pip install psutil colorama
 python monitor-linux.py
 
 **⚙️ Email Alerts (Optional)**
+
 EMAIL_SENDER = 'your_email@example.com'
+
 EMAIL_RECEIVER = 'receiver_email@example.com'
+
 SMTP_SERVER = 'smtp.example.com'
+
 SMTP_PORT = 587
+
 EMAIL_USERNAME = 'your_email@example.com'
+
 EMAIL_PASSWORD = 'your_email_password'
 
 **⚠️ Alert Thresholds**
-CPU_THRESHOLD = 85       # in percent
+
+CPU_THRESHOLD = 85
+
 MEMORY_THRESHOLD = 80
+
 DISK_THRESHOLD = 90
 
