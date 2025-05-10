@@ -13,7 +13,6 @@ A Python-based CLI tool to monitor **CPU**, **Memory**, and **Disk** usage in re
     • Python 3.6+
     • Linux system
     • `psutil`, `colorama` installed in a Python environment (recommended: virtualenv)
-    • 
 **Install dependencies:**
 
 #bash
