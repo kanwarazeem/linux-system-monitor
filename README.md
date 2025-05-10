@@ -1,3 +1,7 @@
+**🚀 Running the Monitor**
+
+python monitor-linux.py
+
 **🖥️ Linux System Monitor**
 
 A Python-based CLI tool to monitor **CPU**, **Memory**, and **Disk** usage in real-time with:
@@ -25,8 +29,6 @@ python3 -m venv venv-monitor
 source venv-monitor/bin/activate
 pip install psutil colorama
 
-**🚀 Running the Monitor**
-python monitor-linux.py
 
 **⚙️ Email Alerts (Optional)**
 
