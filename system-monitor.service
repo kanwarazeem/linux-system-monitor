@@ -1,0 +1,28 @@
+[Unit]
+Description=Linux System Monitor Service
+After=network.target
+Documentation=https://github.com/kanwarazeem/linux-system-monitor
+
+[Service]
+Type=simple
+User=root
+Environment="EMAIL_PASSWORD=your_email_app_password"
+ExecStart=/usr/bin/python3 /usr/local/bin/monitor-linux.py --config /etc/system_monitor.conf
+WorkingDirectory=/usr/local/bin
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=system-monitor
+
+# Security hardening
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=yes
+ProtectControlGroups=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+
+[Install]
+WantedBy=multi-user.target
