@@ -1,0 +1,10 @@
+linux-system-monitor/
+├── monitor-linux.py          # Main monitoring script
+├── system-monitor.service    # Systemd service file
+├── system_monitor.conf       # Configuration file
+├── install.sh               # Installation script
+├── uninstall.sh             # Uninstallation script
+├── requirements.txt         # Python dependencies
+├── README.md               # Documentation
+├── LICENSE                 # MIT License
+└── .gitignore             # Git ignore file
