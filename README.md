@@ -94,6 +94,7 @@ Add:
     sudo systemctl status system-monitor
 
 **⚙️ Configuration**
+
 The service uses /etc/system_monitor.conf for configuration:
 
     [Thresholds]
@@ -103,7 +104,7 @@ The service uses /etc/system_monitor.conf for configuration:
     net_sent = 10     # Network upload speed (MB/s)
     net_recv = 10     # Network download speed (MB/s)
 
-Default Thresholds
+**Default Thresholds**
     
     [Thresholds]
     cpu = 85          # CPU usage percentage
@@ -112,14 +113,14 @@ Default Thresholds
     net_sent = 10     # Network upload speed (MB/s)
     net_recv = 10     # Network download speed (MB/s)
 
-Logging Settings
+**Logging Settings**
 
     [Logging]
     log_file = /var/log/system_monitor.log
     max_size = 10     # MB before rotation
     backup_count = 5  # Number of backup logs
 
-General Settings
+**General Settings**
 
     [General]
     interval = 5      # Check interval in seconds
