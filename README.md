@@ -39,7 +39,7 @@ Custom Thresholds: Individual limits for each metric
 
 **1. Clone the Repository**
 
-    • git clone https://github.com/yourusername/linux-system-monitor.git
+    • git clone https://github.com/kanwarazeem/linux-system-monitor.git
     • cd linux-system-monitor
 
 **2. Install the Service**
