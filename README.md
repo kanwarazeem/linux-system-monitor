@@ -32,44 +32,44 @@ Custom Thresholds: Individual limits for each metric
 
 **🛠️ Installation**
 
-    •# Install required Python packages
-    • sudo apt update
-    • sudo apt install python3 python3-pip
-    • sudo pip3 install psutil colorama
+     Install required Python packages
+     sudo apt update
+     sudo apt install python3 python3-pip
+     sudo pip3 install psutil colorama
 
 **1. Clone the Repository**
 
-    • git clone https://github.com/kanwarazeem/linux-system-monitor.git
-    • cd linux-system-monitor
+     git clone https://github.com/kanwarazeem/linux-system-monitor.git
+     cd linux-system-monitor
 
 **2. Install the Service**
 
-    • # Copy the monitor script
-    • sudo cp monitor-linux.py /usr/local/bin/
+     Copy the monitor script
+     sudo cp monitor-linux.py /usr/local/bin/
 
-    • # Make it executable
-    • sudo chmod +x /usr/local/bin/monitor-linux.py
+     Make it executable
+     sudo chmod +x /usr/local/bin/monitor-linux.py
 
-    • # Install configuration file
-    • sudo cp system_monitor.conf /etc/
+     Install configuration file
+     sudo cp system_monitor.conf /etc/
 
-    • # Install systemd service
-    • sudo cp system-monitor.service /etc/systemd/system/
+     Install systemd service
+     sudo cp system-monitor.service /etc/systemd/system/
 
 **3. Configure Email Alerts (Optional)**
 
 Edit the configuration file:
 
-    • sudo nano /etc/system_monitor.conf
+     sudo nano /etc/system_monitor.conf
     
 **Update the email section:**
 
-    • [Email]
-    • sender = your_email@gmail.com
-    • receiver = alert_recipient@example.com
-    • smtp_server = smtp.gmail.com
-    • smtp_port = 587
-    • username = your_email@gmail.com
+     [Email]
+     sender = your_email@gmail.com
+     receiver = alert_recipient@example.com
+     smtp_server = smtp.gmail.com
+     smtp_port = 587
+     username = your_email@gmail.com
 
 Set the email password as environment variable:
 
