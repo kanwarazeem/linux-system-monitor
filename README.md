@@ -44,16 +44,16 @@ Custom Thresholds: Individual limits for each metric
 
 **2. Install the Service**
 
-     Copy the monitor script
+     #Copy the monitor script
      sudo cp monitor-linux.py /usr/local/bin/
 
-     Make it executable
+     #Make it executable
      sudo chmod +x /usr/local/bin/monitor-linux.py
 
-     Install configuration file
+     #Install configuration file
      sudo cp system_monitor.conf /etc/
 
-     Install systemd service
+     #Install systemd service
      sudo cp system-monitor.service /etc/systemd/system/
 
 **3. Configure Email Alerts (Optional)**
