@@ -1,0 +1,51 @@
+# Linux System Monitor Configuration
+
+# Refresh interval in seconds
+refresh_interval: 2
+
+# Alert thresholds
+thresholds:
+  cpu: 80
+  memory: 85
+  disk: 90
+  temperature: 85
+
+# Output settings
+output:
+  format: 'table'  # 'table', 'json', 'csv'
+  colorize: true
+  show_graphs: false
+  export_csv: false
+  export_file: 'monitor_export.csv'
+
+# Logging
+logging:
+  enabled: true
+  level: 'INFO'  # DEBUG, INFO, WARNING, ERROR
+  file: 'monitor.log'
+  max_size_mb: 10
+  backup_count: 5
+
+# Process monitoring
+process:
+  top_count: 10
+  include_system: false
+  sort_by: 'cpu'  # 'cpu' or 'memory'
+
+# Network monitoring
+network:
+  interfaces: null  # null for all, or specify: ['eth0', 'wlan0']
+  show_detailed: false
+
+# Disk monitoring
+disk:
+  show_all_mounts: false
+  exclude_mounts:
+    - '/dev'
+    - '/proc'
+    - '/sys'
+
+# Temperature monitoring
+temperature:
+  enabled: true
+  sensor_names: null  # null for auto-detect
